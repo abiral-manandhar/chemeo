@@ -1,0 +1,29 @@
+{%load static%}
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+       <link rel="stylesheet" href="{% static 'lead.css' %}">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+
+    <title>Leaderboards</title>
+</head>
+<body>
+{%for i in data%}
+
+<div class="score-list">
+
+    <div class="username">
+{{i.username}}
+        </div>
+
+    <div class="score">
+{{i.score}}
+        </div>
+    </div>
+{%endfor%}
+
+</body>
+</html>
